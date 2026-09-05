@@ -1,0 +1,96 @@
+{
+  "study_type": "reconstructed ablation; original code and held-out IDs unavailable",
+  "model": "qwen3.7-plus-2026-05-26",
+  "endpoint_region": "China (Beijing)",
+  "temperature": 0,
+  "enable_thinking": false,
+  "response_format": "json_object",
+  "seed": 42,
+  "dataset_rows": 1482,
+  "unique_question_ids": 781,
+  "eligible_unique_questions": 738,
+  "split_sizes": {
+    "train": 479,
+    "development": 111,
+    "test": 148,
+    "end_to_end_pool": 90,
+    "final": 30
+  },
+  "eligible_topics": [
+    "Addiction",
+    "Anger Management",
+    "Anxiety",
+    "Behavioral Change",
+    "Depression",
+    "Family Conflict",
+    "Human Sexuality",
+    "Intimacy",
+    "LGBTQ",
+    "Legal & Regulatory",
+    "Marriage",
+    "Parenting",
+    "Relationship Dissolution",
+    "Relationships",
+    "Self-esteem",
+    "Social Relationships",
+    "Stress",
+    "Trauma"
+  ],
+  "conditions": {
+    "B0_single_llm": {
+      "affect": false,
+      "need": false,
+      "rag": false,
+      "validator": false
+    },
+    "B1_single_llm_rag": {
+      "affect": false,
+      "need": true,
+      "rag": true,
+      "validator": false
+    },
+    "A1_without_affect": {
+      "affect": false,
+      "need": true,
+      "rag": true,
+      "validator": true
+    },
+    "A2_without_validator": {
+      "affect": true,
+      "need": true,
+      "rag": true,
+      "validator": false
+    },
+    "A3_full_agent": {
+      "affect": true,
+      "need": true,
+      "rag": true,
+      "validator": true
+    },
+    "A4_without_need_rag": {
+      "affect": true,
+      "need": false,
+      "rag": false,
+      "validator": true
+    }
+  },
+  "dataset_sha256": "26b5ee1dae1383295a6d92b960479504d68deafa2812d9413ce9136f71dff1a5",
+  "created_utc": "2026-08-10T06:36:59Z",
+  "completed_utc": "2026-08-10T06:48:21Z",
+  "api_calls_expected": 210,
+  "output_files": {
+    "frozen_cases.csv": "c7049e6e2f6c9ac871abbfcbdd282d09cc47399e5af36f14b003eb525fe75840",
+    "training_cases.csv": "df0d6d9273ab46a425696acf75f3b9d024f9c55b41d3cc4ef4777612ae89bdc2",
+    "api_responses.jsonl": "262ab824451bb72b724b1804766be44d6e3e2534df2c7b299e94ea2ad03a688e",
+    "predictions.jsonl": "60f73a8b1ee14510c4b5772985b95409790ac553cbc8c4d6314e05ea0db4a151",
+    "condition_summary.csv": "cb1283fc6944823380646b4251910eed370a86239bc61ebd21f4066c4adcd352",
+    "paired_comparisons.csv": "2d25eb68ae48a2c59294dd0efb6967be1547989d46977f09c82826c95c2f5665"
+  },
+  "api_calls_executed": 210,
+  "api_calls_in_primary_analysis": 150,
+  "excluded_redundant_generation_calls": 60,
+  "strict_pairing": {
+    "A1_without_affect": "B1_single_llm_rag",
+    "A3_full_agent": "A2_without_validator"
+  }
+}
