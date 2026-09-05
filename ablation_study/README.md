@@ -1,5 +1,5 @@
 # Agent Ablation Study
-Note: The ablation study is provided as supplementary experimental material. The primary thesis results are contained in original_studies/.
+
 ## Objective
 
 This experiment evaluates which agent components improve the conversion of mental-health-related user conversations into structured, evidence-traceable software requirements. It is a reconstructed ablation study because the original implementation and held-out identifiers were unavailable when this protocol was assembled.
