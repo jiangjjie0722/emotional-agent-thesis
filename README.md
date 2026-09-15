@@ -23,6 +23,3 @@ Each experiment has its own README with inputs, procedure, outputs and privacy n
   Source: https://huggingface.co/datasets/loaiabdalslam/counselchat  
   Used in the supplementary reconstructed ablation study.
 
-- **User Study Dataset**  
-  Collected through the questionnaire conducted for this thesis.  
-  Only de-identified records are included in the public release.
